@@ -97,9 +97,9 @@ VATT, 1, ,1
 
 ! Voltage boundaries on the drift and induction plane
 ASEL, S, LOC, Z, drift
-DA, ALL, VOLT, -325
+DA, ALL, VOLT, -900
 ASEL, S, LOC, Z, induct
-DA, ALL, VOLT, 675
+DA, ALL, VOLT, 0
 
 ! Symmetry boundary conditions on the sides
 VSEL, S,,,5
@@ -139,10 +139,10 @@ DA, ALL, SYMM
 ! Voltage boundary conditions on the metal
 VSEL, S,,, 4
 ASLV, S
-DA, ALL, VOLT, 175
+DA, ALL, VOLT, -250
 VSEL, S,,, 6
 ASLV, S
-DA, ALL, VOLT, -175
+DA, ALL, VOLT, -600
 
 ! Meshing options
 VSEL, S,,, 1, 7

@@ -28,7 +28,7 @@ outdia = 0.070   ! Hole outer diameter, in mm
 middia = 0.050   ! Hole diameter in the centre, in mm
 drift =   1.0    ! Thickness of the drift region
 induct = -1.0    ! Thickness of the induction gap
-rim =    0.080   ! Rim diameter, in mm
+
 
 ! Make the plastic (1), lower metal (2), upper metal (3) and gas (4)
 BLOCK, 0, pitch/2, 0, sqrt(3)*pitch/2, -kapton/2, kapton/2
@@ -139,10 +139,10 @@ DA, ALL, SYMM
 ! Voltage boundary conditions on the metal
 VSEL, S,,, 4
 ASLV, S
-DA, ALL, VOLT, -250
+DA, ALL, VOLT, -400
 VSEL, S,,, 6
 ASLV, S
-DA, ALL, VOLT, -600
+DA, ALL, VOLT, -750
 
 ! Meshing options
 VSEL, S,,, 1, 7

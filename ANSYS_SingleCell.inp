@@ -28,7 +28,7 @@ outdia = 0.070   ! Hole outer diameter, in mm
 middia = 0.050   ! Hole diameter in the centre, in mm
 drift =   1.0    ! Thickness of the drift region
 induct = -1.0    ! Thickness of the induction gap
-
+rim = 0.07
 
 ! Make the plastic (1), lower metal (2), upper metal (3) and gas (4)
 BLOCK, 0, pitch/2, 0, sqrt(3)*pitch/2, -kapton/2, kapton/2
